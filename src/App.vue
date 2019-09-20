@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
+    <div id="nav" class="navbar navbar-light bg-light mb-3">
+      <router-link to="/">
+        <font-awesome-icon icon="bomb" />
+        Menu
+      </router-link>
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <div class="flex-container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
